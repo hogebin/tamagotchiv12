@@ -7,7 +7,6 @@ input.onButtonPressed(Button.B, function () {
 let time_of_sickness_unattended_secondsauto_background_refresh = 0
 let Adult_2 = 0
 let Adult_1 = 0
-let Adult = 0
 let happiness_average = 0
 let _2_days_in_milliseconds = 0
 let happiness_total = 0
@@ -23,7 +22,9 @@ let Time_of_poo_left_unattended_in_seconds = 0
 let poo_0_is_no_1_is_yes = 0
 let Age_of_pet_in_secondsauto_background_refresh = 0
 let Health_0_is_dead_5_is_max = 0
+let Adult = 0
 if (tinkercademy.ADKeyboard(ADKeys.A, AnalogPin.P1)) {
+    Adult = 0
     Health_0_is_dead_5_is_max = 5
     Age_of_pet_in_secondsauto_background_refresh = 0
     poo_0_is_no_1_is_yes = 0
@@ -219,5 +220,10 @@ basic.forever(function () {
             basic.pause(1800000)
             Health_0_is_dead_5_is_max += -1
         }
+    }
+})
+basic.forever(function () {
+    if (poo_0_is_no_1_is_yes >= 1) {
+        basic.showIcon(IconNames.Duck)
     }
 })
