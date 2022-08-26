@@ -5,16 +5,16 @@ input.onButtonPressed(Button.B, function () {
     bird.change(LedSpriteProperty.Y, 1)
 })
 let time_of_sickness_unattended_secondsauto_background_refresh = 0
-let happiness_total = 0
-let Happiness_05 = 0
-let emptyObstacleY = 0
-let ticks = 0
-let index6 = 0
 let Adult_2 = 0
 let Adult_1 = 0
 let Adult = 0
 let happiness_average = 0
 let _2_days_in_milliseconds = 0
+let happiness_total = 0
+let Happiness_05 = 0
+let emptyObstacleY = 0
+let ticks = 0
+let index6 = 0
 let bird: game.LedSprite = null
 let Time_last_eaten_in_seconds = 0
 let sick_0_is_no_1_is_yes = 0
@@ -45,26 +45,6 @@ if (tinkercademy.ADKeyboard(ADKeys.A, AnalogPin.P1)) {
     Time_last_eaten_in_seconds = 0
 }
 basic.forever(function () {
-    basic.pause(_2_days_in_milliseconds)
-    for (let index = 0; index < 100; index++) {
-        music.playMelody("C5 G E C F A C5 D ", 20867)
-    }
-    if (happiness_average >= 30) {
-        Adult = Adult_1
-    } else {
-        Adult = Adult_2
-    }
-})
-basic.forever(function () {
-    _2_days_in_milliseconds = 172000000
-})
-basic.forever(function () {
-    if (tinkercademy.ADKeyboard(ADKeys.C, AnalogPin.P1)) {
-        Time_last_eaten_in_seconds = 0
-        Hunger_0_is_very_hungry_5_is_not_hungry = 5
-    }
-})
-basic.forever(function () {
     if (tinkercademy.ADKeyboard(ADKeys.D, AnalogPin.P1)) {
         let obstacles: game.LedSprite[] = []
         index6 = 0
@@ -93,6 +73,26 @@ basic.forever(function () {
         basic.pause(1000)
         Happiness_05 += 1
         happiness_total += 1
+    }
+})
+basic.forever(function () {
+    basic.pause(_2_days_in_milliseconds)
+    for (let index = 0; index < 100; index++) {
+        music.playMelody("C5 G E C F A C5 D ", 20867)
+    }
+    if (happiness_average >= 30) {
+        Adult = Adult_1
+    } else {
+        Adult = Adult_2
+    }
+})
+basic.forever(function () {
+    _2_days_in_milliseconds = 172000000
+})
+basic.forever(function () {
+    if (tinkercademy.ADKeyboard(ADKeys.C, AnalogPin.P1)) {
+        Time_last_eaten_in_seconds = 0
+        Hunger_0_is_very_hungry_5_is_not_hungry = 5
     }
 })
 basic.forever(function () {
@@ -134,10 +134,6 @@ basic.forever(function () {
     Time_last_eaten_in_seconds += 1
 })
 basic.forever(function () {
-    basic.pause(100)
-    Age_of_pet_in_secondsauto_background_refresh += 1
-})
-basic.forever(function () {
     if (Hunger_0_is_very_hungry_5_is_not_hungry <= 3) {
         basic.showLeds(`
             . . . . .
@@ -150,6 +146,10 @@ basic.forever(function () {
             music.playMelody("G G G G G G G G ", 999)
         }
     }
+})
+basic.forever(function () {
+    basic.pause(100)
+    Age_of_pet_in_secondsauto_background_refresh += 1
 })
 basic.forever(function () {
     if (tinkercademy.ADKeyboard(ADKeys.B, AnalogPin.P1)) {
