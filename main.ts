@@ -88,13 +88,8 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    _2_days_in_milliseconds = 172000000
-})
-basic.forever(function () {
-    if (tinkercademy.ADKeyboard(ADKeys.C, AnalogPin.P1)) {
-        Time_last_eaten_in_seconds = 0
-        Hunger_0_is_very_hungry_5_is_not_hungry = 5
-    }
+    basic.pause(100)
+    Age_of_pet_in_secondsauto_background_refresh += 1
 })
 basic.forever(function () {
     if (poo_0_is_no_1_is_yes >= 1) {
@@ -113,6 +108,23 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    while (Health_0_is_dead_5_is_max == 0) {
+        basic.showLeds(`
+            . # # # .
+            # . # . #
+            # # # # #
+            . # # # .
+            . # . # .
+            `)
+        for (let index = 0; index < 3; index++) {
+            music.playMelody("D C5 C5 C5 C5 C5 C5 C5 ", 394)
+        }
+    }
+})
+basic.forever(function () {
+    _2_days_in_milliseconds = 172000000
+})
+basic.forever(function () {
     if (poo_0_is_no_1_is_yes == 1) {
         basic.showIcon(IconNames.Duck)
     }
@@ -122,6 +134,17 @@ basic.forever(function () {
     }
     if (Time_of_poo_left_unattended_in_seconds > 1019999.9994) {
         sick_0_is_no_1_is_yes = 1
+    }
+})
+basic.forever(function () {
+    if (Adult == Adult_2) {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . . . .
+            # # # # #
+            . . . . .
+            `)
     }
 })
 basic.forever(function () {
@@ -146,19 +169,15 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (Adult == Adult_1) {
-        basic.showLeds(`
-            . . . . .
-            . # . # .
-            . . . . .
-            # . . . #
-            . # # # .
-            `)
+    if (Hunger_0_is_very_hungry_5_is_not_hungry == 0) {
+        while (Hunger_0_is_very_hungry_5_is_not_hungry == 0) {
+            basic.pause(1800000)
+            Health_0_is_dead_5_is_max += -1
+        }
     }
 })
 basic.forever(function () {
-    basic.pause(100)
-    Time_last_eaten_in_seconds += 1
+    happiness_average = happiness_total / Age_of_pet_in_secondsauto_background_refresh
 })
 basic.forever(function () {
     if (Hunger_0_is_very_hungry_5_is_not_hungry <= 3) {
@@ -175,15 +194,24 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    basic.pause(100)
-    Age_of_pet_in_secondsauto_background_refresh += 1
+    if (Adult == Adult_1) {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . . . .
+            # . . . #
+            . # # # .
+            `)
+    }
 })
 basic.forever(function () {
-    if (tinkercademy.ADKeyboard(ADKeys.B, AnalogPin.P1)) {
-        poo_0_is_no_1_is_yes = 0
-        Time_of_poo_left_unattended_in_seconds = 0
-        time_of_sickness_unattended_secondsauto_background_refresh = 0
-        sick_0_is_no_1_is_yes = 0
+    basic.pause(100)
+    Time_last_eaten_in_seconds += 1
+})
+basic.forever(function () {
+    if (tinkercademy.ADKeyboard(ADKeys.C, AnalogPin.P1)) {
+        Time_last_eaten_in_seconds = 0
+        Hunger_0_is_very_hungry_5_is_not_hungry = 5
     }
 })
 basic.forever(function () {
@@ -192,38 +220,10 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    while (Health_0_is_dead_5_is_max == 0) {
-        basic.showLeds(`
-            . # # # .
-            # . # . #
-            # # # # #
-            . # # # .
-            . # . # .
-            `)
-        for (let index = 0; index < 3; index++) {
-            music.playMelody("D C5 C5 C5 C5 C5 C5 C5 ", 394)
-        }
-    }
-})
-basic.forever(function () {
-    if (Adult == Adult_2) {
-        basic.showLeds(`
-            . . . . .
-            . # . # .
-            . . . . .
-            # # # # #
-            . . . . .
-            `)
-    }
-})
-basic.forever(function () {
-    happiness_average = happiness_total / Age_of_pet_in_secondsauto_background_refresh
-})
-basic.forever(function () {
-    if (Hunger_0_is_very_hungry_5_is_not_hungry == 0) {
-        while (Hunger_0_is_very_hungry_5_is_not_hungry == 0) {
-            basic.pause(1800000)
-            Health_0_is_dead_5_is_max += -1
-        }
+    if (tinkercademy.ADKeyboard(ADKeys.B, AnalogPin.P1)) {
+        poo_0_is_no_1_is_yes = 0
+        Time_of_poo_left_unattended_in_seconds = 0
+        time_of_sickness_unattended_secondsauto_background_refresh = 0
+        sick_0_is_no_1_is_yes = 0
     }
 })
