@@ -97,6 +97,22 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    if (poo_0_is_no_1_is_yes >= 1) {
+        basic.showIcon(IconNames.Duck)
+    }
+})
+basic.forever(function () {
+    if (Time_last_eaten_in_seconds >= 8280000) {
+        for (let index = 0; index < randint(0, 20); index++) {
+            basic.pause(1000)
+        }
+        while (Time_last_eaten_in_seconds >= 8280) {
+            basic.pause(1800000)
+            Hunger_0_is_very_hungry_5_is_not_hungry += -1
+        }
+    }
+})
+basic.forever(function () {
     if (poo_0_is_no_1_is_yes == 1) {
         basic.showIcon(IconNames.Duck)
     }
@@ -109,13 +125,23 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (Time_last_eaten_in_seconds >= 8280000) {
-        for (let index = 0; index < randint(0, 20); index++) {
-            basic.pause(1000)
+    if (sick_0_is_no_1_is_yes == 1) {
+        while (sick_0_is_no_1_is_yes == 1) {
+            music.playMelody("A - A - A - C5 - ", 1300)
         }
-        while (Time_last_eaten_in_seconds >= 8280) {
-            basic.pause(1800000)
-            Hunger_0_is_very_hungry_5_is_not_hungry += -1
+        while (sick_0_is_no_1_is_yes == 1) {
+            basic.showLeds(`
+                # . # . #
+                . # . # .
+                # . # . #
+                . # . # .
+                # . # . #
+                `)
+            basic.pause(100)
+            time_of_sickness_unattended_secondsauto_background_refresh += 1
+        }
+        if (time_of_sickness_unattended_secondsauto_background_refresh > 180000) {
+            Time_last_eaten_in_seconds += -1
         }
     }
 })
@@ -161,27 +187,6 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (sick_0_is_no_1_is_yes == 1) {
-        while (sick_0_is_no_1_is_yes == 1) {
-            music.playMelody("A - A - A - C5 - ", 1300)
-        }
-        while (sick_0_is_no_1_is_yes == 1) {
-            basic.showLeds(`
-                # . # . #
-                . # . # .
-                # . # . #
-                . # . # .
-                # . # . #
-                `)
-            basic.pause(100)
-            time_of_sickness_unattended_secondsauto_background_refresh += 1
-        }
-        if (time_of_sickness_unattended_secondsauto_background_refresh > 180000) {
-            Time_last_eaten_in_seconds += -1
-        }
-    }
-})
-basic.forever(function () {
     if (Time_last_eaten_in_seconds >= 1800000) {
         poo_0_is_no_1_is_yes = 1
     }
@@ -220,10 +225,5 @@ basic.forever(function () {
             basic.pause(1800000)
             Health_0_is_dead_5_is_max += -1
         }
-    }
-})
-basic.forever(function () {
-    if (poo_0_is_no_1_is_yes >= 1) {
-        basic.showIcon(IconNames.Duck)
     }
 })
